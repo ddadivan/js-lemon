@@ -30,8 +30,9 @@ function createItemList() {
 
 fieldBtn.addEventListener('click', function (e){
 
-    if (field.value.length <= 0) {
+    if (field.value.trim().length <= 0) {
         alert('Введите вашу заметку');
+        field.value = '';
     } else {
         createItemList();
         field.value = '';
