@@ -94,5 +94,17 @@ body {
 .list-delete:hover {
   opacity: 0.8;
 }
+.list-delete-all {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  margin: 0 0 0 auto;
+  border: none;
+  border-radius: 4px;
+}
+.list-delete-all.active {
+  display: flex;
+}
 
 /*# sourceMappingURL=styles.css.map */

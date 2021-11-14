@@ -3,7 +3,7 @@
 const list = document.querySelector('.list');
 const field = document.querySelector('.list-field');
 const fieldBtn = document.querySelector('.list-field-btn');
-
+const deleteAll = document.querySelector('.list-delete-all');
 
 function createItemList() {
 
@@ -37,6 +37,21 @@ fieldBtn.addEventListener('click', function (e){
         createItemList();
         field.value = '';
     }
+
+    if (list.children.length > 1) {
+        deleteAll.classList.add('active');
+    }
 });
 
+function removeAll() {
+    let itemArr = Array.from(list.children);
+
+    for(let item of itemArr) {
+       item.remove();
+    }
+}
+
+deleteAll.addEventListener('click', function(e) {
+    removeAll();
+});
 

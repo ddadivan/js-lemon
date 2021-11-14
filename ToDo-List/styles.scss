@@ -104,5 +104,19 @@ body {
     &:hover {
       opacity: .8;
     }
+
+    &-all {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      min-width: 100px;
+      margin: 0 0 0 auto;
+      border: none;
+      border-radius: 4px;
+
+      &.active {
+        display: flex;
+      }
+    }
   }
 }
