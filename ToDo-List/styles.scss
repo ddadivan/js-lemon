@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font: 500 15px/1.2 Roboto, sans-serif;
+  background: #e9e9e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.list {
+  margin: 0;
+  padding: 20px 0;
+
+  &-wrap {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 10px 40px;
+  }
+
+  &-title {
+    text-align: center;
+  }
+
+  &-field {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    min-height: 40px;
+    font: 600 16px/1.2 Roboto, sans-serif;
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 4px;
+
+    &:focus {
+      border-color: #2e35ff;
+      outline: none;
+    }
+
+    &-wrap {
+      display: flex;
+    }
+
+    &-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 75px;
+      margin-left: 10px;
+      padding: 3px 10px;
+      font-family: Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 1px;
+      border: none;
+      color: #fff;
+      background: #2e35ff;
+      border-radius: 4px;
+      transition: .2s ease-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    list-style: none;
+    background: #fff;
+    border-radius: 4px;
+
+    &-text {
+      padding: 10px;
+      display: block;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  &-delete {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 75px;
+    color: #fff;
+    padding: 5px 10px;
+    font: 500 15px/1.2 Roboto, sans-serif;
+    background: #ff3737;
+    border-radius: 0 4px 4px 0;
+    transition: .2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
