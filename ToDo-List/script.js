@@ -53,5 +53,6 @@ function removeAll() {
 
 deleteAll.addEventListener('click', function(e) {
     removeAll();
+    deleteAll.classList.remove('active');
 });
 
